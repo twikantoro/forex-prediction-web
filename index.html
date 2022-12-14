@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"
+        integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.1/dist/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+    <script src="./chartjs-chart-financial.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="block">
+            <h1 class="title">Prediksi EUR/USD</h1>
+            <h2 class="subtitle">Menggunakan <span class="is-italic">feedforward neural network</span></h2>
+            <!-- <button class="button">Button</button> -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div>
+                            <canvas id="chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box has-background-success">
+                        <p class="title has-text-white">Prediksi BUY</p>
+                        <p class="has-text-white has-text-weight-bold is-size-1" id="prediction_buy">-</p>
+                    </div>
+                    <div class="tile is-child box has-background-danger">
+                        <p class="title has-text-white">Prediksi SELL</p>
+                        <p class="has-text-white has-text-weight-bold is-size-1" id="prediction_sell">-</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
